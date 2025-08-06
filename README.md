@@ -1,29 +1,27 @@
 
-# Grounding-IQA: Multimodal Language Grounding Model for Image Quality Assessment
-
-[Zheng Chen](https://zhengchen1999.github.io/), [Xun Zhang](https://scholar.google.com.hk/citations?hl=zh-CN&user=xCuW6LcAAAAJ), [Wenbo Li](https://fenglinglwb.github.io/), [Renjing Pei](https://orcid.org/0000-0001-7513-6576), [Fenglong Song](https://scholar.google.com/citations?hl=zh-CN&pli=1&user=WYDVk5oAAAAJ), [Xiongkuo Min](https://minxiongkuo.github.io/), [Xiaohong Liu](https://jhc.sjtu.edu.cn/~xiaohongliu/), [Xin Yuan](https://en.westlake.edu.cn/faculty/xin-yuan.html), [Yong Guo](https://www.guoyongcs.com/), and [Yulun Zhang](http://yulunzhang.com/), "Grounding-IQA: Multimodal Language Grounding Model for Image Quality Assessment", 2024
+# Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression
+Zheng Chen[https://github.com/zhengchen1999], Mingde Zhou[https://orcid.org/0009-0003-6642-7349], Jinpei Guo[https://jp-guo.github.io/], Jiale Yuan[https://www.linkedin.com/in/jiale-yuan-0100a0223/], Ji Yifei[https://github.com/Niax23], and [Yulun Zhang](http://yulunzhang.com/), "Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression", 2025
 
 <div>
-<a href="https://github.com/zhengchen1999/Grounding-IQA/releases" target='_blank' style="text-decoration: none;"><img src="https://img.shields.io/github/downloads/zhengchen1999/Grounding-IQA/total?color=green&style=flat"></a>
-<a href="https://github.com/zhengchen1999/Grounding-IQA" target='_blank' style="text-decoration: none;"><img src="https://visitor-badge.laobi.icu/badge?page_id=zhengchen1999/Grounding-IQA"></a>
-<a href="https://github.com/zhengchen1999/Grounding-IQA/stargazers" target='_blank' style="text-decoration: none;"><img src="https://img.shields.io/github/stars/zhengchen1999/Grounding-IQA?style=social"></a>
+<a href="https://github.com/zhengchen1999/SODEC/releases" target='_blank' style="text-decoration: none;"><img src="https://img.shields.io/github/downloads/zhengchen1999/SODEC/total?color=green&style=flat"></a>
+<a href="https://github.com/zhengchen1999/SODEC" target='_blank' style="text-decoration: none;"><img src="https://visitor-badge.laobi.icu/badge?page_id=zhengchen1999/SODEC"></a>
+<a href="https://github.com/zhengchen1999/SODEC" target='_blank' style="text-decoration: none;"><img src="https://img.shields.io/github/stars/zhengchen1999/SODEC?style=social"></a>
 </div>
 
-[[project](https://zhengchen1999.github.io/Grounding-IQA)] [[arXiv](https://arxiv.org/abs/2411.17237)] [[supplementary material](https://github.com/zhengchen1999/Grounding-IQA/releases/download/v1/Supplementary_Material.pdf)] [dataset] [pretrained models]
+[[project](https://zhengchen1999.github.io/SODEC)] [[arXiv](https://arxiv.org/abs/2411.17237)] [[supplementary material](https://github.com/zhengchen1999/SODEC/releases/download/v1/Supplementary_Material.pdf)] [dataset] [pretrained models]
 
 
 
 #### 🔥🔥🔥 News
 
-- **2024-11-26:** This repo is released.
+- **2025-8-7:** This repo is released.
 
 ---
 
-> **Abstract:** The development of multimodal large language models (MLLMs) enables the evaluation of image quality through natural language descriptions. This advancement allows for more detailed assessments. However, these MLLM-based IQA methods primarily rely on general contextual descriptions, sometimes limiting fine-grained quality assessment.
-> To address this limitation, we introduce a new image quality assessment (IQA) task paradigm, grounding-IQA. This paradigm integrates multimodal referring and grounding with IQA to realize more fine-grained quality perception. Specifically, grounding-IQA comprises two subtasks: grounding-IQA-description (GIQA-DES) and visual question answering (GIQA-VQA). GIQA-DES involves detailed descriptions with precise locations (e.g., bounding boxes), while GIQA-VQA focuses on quality QA for local regions. To realize grounding-IQA, we construct a corresponding dataset, GIQA-160K, through our proposed automated annotation pipeline. Furthermore, we develop a well-designed benchmark, GIQA-Bench. The benchmark comprehensively evaluates the model grounding-IQA performance from three perspectives: description quality, VQA accuracy, and grounding precision. Experiments demonstrate that our proposed task paradigm, dataset, and benchmark facilitate the more fine-grained IQA application.
+> **Abstract:** Diffusion-based image compression has demonstrated impressive perceptual performance. However, it suffers from two critical drawbacks: (1) excessive decoding latency due to multi-step sampling, and (2) poor fidelity resulting from over-reliance on generative priors. To address these issues, we propose SODEC, a novel single-step diffusion image compression model. We argue that in image compression, a sufficiently informative latent renders multi-step refinement unnecessary. Based on this insight, we leverage a pre-trained VAE-based model to produce latents with rich information, and replace the iterative denoising process with a single-step decoding. Meanwhile, to improve fidelity, we introduce the fidelity guidance module, encouraging outputs that are faithful to the original image. Furthermore, we design the rate annealing training strategy to enable effective training under extremely low bitrates. Extensive experiments show that SODEC significantly outperforms existing methods, achieving superior rate–distortion–perception performance. Moreover, compared to previous diffusion-based compression models, SODEC improves decoding speed by more than 20x.
 
-![](figs/Example.png)
 
+![](figs/example1.png)
 ---
 
 ### Pipeline
@@ -32,9 +30,9 @@
 
 ---
 
-### Radar Chat
+### Performance Chat
 
-![](figs/Radar-Chat.png)
+![](figs/Performance.png)
 
 ## 🔖 TODO
 
@@ -59,40 +57,40 @@
 
 ## <a name="results"></a>🔎 Results
 
-We achieve impressive performance on GIQA-DES and GIQA-VQA tasks.
+We achieve impressive performance on image compression tasks.
 
 <details open>
 <summary>Quantitative Results (click to expand)</summary>
 
-- Results in Tab. 5 of the main paper
+- Results in Fig. 4 of the main paper
 
 <p align="center">
-  <img width="900" src="figs/Quantitative.png">
+  <img width="900" src="figs/result_Fig4.png">
 </p>
 </details>
 
 <details open>
 <summary>Qualitative Results (click to expand)</summary>
 
-- Results in Fig. 7 of the main paper
+- Results in Fig. 5 of the main paper
 
 <p align="center">
-  <img width="900" src="figs/Qualitative-1.png">
+  <img width="900" src="figs/result_Fig5.png">
 </p>
 <details>
 <summary>More Qualitative Results</summary>
 
 
-- More Results on GIQA-DES (Fig. 6 of the supplementary material)
+- More Results on DIV2K-val (Fig. 4 of the supplementary material)
 
 <p align="center">
-  <img width="900" src="figs/Qualitative-2.png">
+  <img width="900" src="figs/more_qualitative1.png">
 </p>
 
-- More Results on GIQA-VQA (Fig. 7 of the supplementary material)
+- More Results on Kodak (Fig. 6 of the supplementary material)
 
 <p align="center">
-  <img width="900" src="figs/Qualitative-3.png">
+  <img width="900" src="figs/more_qualitative2.png">
 </p>
 </details>
 
