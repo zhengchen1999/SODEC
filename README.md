@@ -19,7 +19,7 @@
 
 ---
 
-> **Abstract:** Diffusion-based image compression has demonstrated impressive perceptual performance. However, it suffers from two critical drawbacks: (1) excessive decoding latency due to multi-step sampling, and (2) poor fidelity resulting from over-reliance on generative priors. To address these issues, we propose SODEC, a novel single-step diffusion image compression model. We argue that in image compression, a sufficiently informative latent renders multi-step refinement unnecessary. Based on this insight, we leverage a pre-trained VAE-based model to produce latents with rich information, and replace the iterative denoising process with a single-step decoding. Meanwhile, to improve fidelity, we introduce the fidelity guidance module, encouraging outputs that are faithful to the original image. Furthermore, we design the rate annealing training strategy to enable effective training under extremely low bitrates. Extensive experiments show that SODEC significantly outperforms existing methods, achieving superior rate–distortion–perception performance. Moreover, compared to previous diffusion-based compression models, SODEC improves decoding speed by more than 20×.
+> **Abstract:** Diffusion-based image compression has demonstrated impressive perceptual performance. However, it suffers from two critical drawbacks: **(1)** excessive decoding latency due to multi-step sampling, and **(2)** poor fidelity resulting from over-reliance on generative priors. To address these issues, we propose SODEC, a novel single-step diffusion image compression model. We argue that in image compression, a sufficiently informative latent renders multi-step refinement unnecessary. Based on this insight, we leverage a pre-trained VAE-based model to produce latents with rich information, and replace the iterative denoising process with a single-step decoding. Meanwhile, to improve fidelity, we introduce the fidelity guidance module, encouraging outputs that are faithful to the original image. Furthermore, we design the rate annealing training strategy to enable effective training under extremely low bitrates. Extensive experiments show that SODEC significantly outperforms existing methods, achieving superior rate–distortion–perception performance. Moreover, compared to previous diffusion-based compression models, SODEC improves decoding speed by more than 20×.
 
 
 ![](figs/example1.png)
@@ -73,8 +73,9 @@ We achieve impressive performance on image compression tasks.
 - Results in Fig. 5 of the main paper
 
 <p align="center">
-  <img width="900" src="figs/more_qualitative2.png">
+  <img width="900" src="figs/result_Fig5.png">
 </p>
+
 </details>
 
 ## <a name="citation"></a>📎 Citation
@@ -82,11 +83,11 @@ We achieve impressive performance on image compression tasks.
 If you find the code helpful in your research or work, please cite the following paper(s).
 
 ```
-@article{chen2024grounding,
-  title={Grounding-IQA: Multimodal Language Grounding Model for Image Quality Assessment},
-  author={Chen, Zheng and Zhang, Xun and Li, Wenbo and Pei, Renjing and Song, Fenglong and Min, Xiongkuo and Liu, Xiaohong and Yuan, Xin and Guo, Yong and Zhang, Yulun},
-  journal={arXiv preprint arXiv:2411.17237},
-  year={2024}
+@article{chen2025steering,
+  title={Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression},
+  author={Chen, Zheng and Zhou, Mingde and Guo, Jinpei and Yuan, Jiale and Ji, Yifei and Zhang, Yulun},
+  journal={arXiv preprint arXiv:},
+  year={2025}
 }
 ```
 
