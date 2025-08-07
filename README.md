@@ -35,7 +35,7 @@
 
 ### Performance
 
-<img src="figs/Performance.png" style="zoom:20%;" />
+<img src="figs/Performance.png">
 
 ## 🔖 TODO
 
