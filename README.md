@@ -91,5 +91,5 @@ If you find the code helpful in your research or work, please cite the following
 
 ## <a name="acknowledgements"></a>💡 Acknowledgements
 
-This project is based on [HiFIC](https://github.com/Justin-Tan/high-fidelity-generative-compression) and [OSEDiff](https://github.com/cswry/OSEDiff).
+This project is based on [HiFiC](https://github.com/Justin-Tan/high-fidelity-generative-compression) and [OSEDiff](https://github.com/cswry/OSEDiff).
 
