@@ -15,7 +15,7 @@
 
 #### 🔥🔥🔥 News
 
-- **2025-8-7:** This repo is released.
+- **2025-8-07:** This repo is released.
 
 ---
 
