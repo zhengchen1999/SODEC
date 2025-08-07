@@ -1,8 +1,8 @@
-# Project: Grounding-IQA
+# Project: SODEC
 
-https://zhengchen1999.github.io/Grounding-IQA
+https://zhengchen1999.github.io/SODEC
 
-
+Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression
 
 ## Acknowledgments
 
