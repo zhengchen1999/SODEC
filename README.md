@@ -9,7 +9,7 @@
 </div>
 
 
-[[project](https://zhengchen1999.github.io/SODEC)] [[arXiv]()] [[supplementary material](https://github.com/zhengchen1999/SODEC/releases/download/v1/Supplementary_Material.pdf)] [dataset] [pretrained models]
+[[project](https://zhengchen1999.github.io/SODEC)] [[arXiv](https://arxiv.org/abs/2508.04979)] [[supplementary material](https://github.com/zhengchen1999/SODEC/releases/download/v1/Supplementary_Material.pdf)] [dataset] [pretrained models]
 
 
 
@@ -75,23 +75,40 @@ We achieve impressive performance on image compression tasks.
 <details>
 <summary>More Qualitative Results</summary>
 
-
-- More Results on DIV2K-val (Fig. 4 of the supplementary material)
+- Rate-Distortion-Perception Results (Fig. 4 of the supplementary material)
 
 <p align="center">
-  <img width="900" src="figs/more_result1.png">
+  <img width="900" src="figs/more_results4.png">
 </p>
 
-- More Results on Kodak (Fig. 6 of the supplementary material)
+- Visual Comparison Results (Fig. 5 of the supplementary material)
 
 <p align="center">
-  <img width="900" src="figs/more_result2.png">
+  <img width="900" src="figs/more_results3.png">
+</p>
+
+- Extended Qualitative Results (Fig. 6 of the supplementary material)
+
+<p align="center">
+  <img width="900" src="figs/more_results5.png">
+</p>
+
+- Additional Results on DIV2K-val (Fig. 7 of the supplementary material)
+
+<p align="center">
+  <img width="900" src="figs/more_results1.png">
+</p>
+
+- Additional Results on Kodak (Fig. 7 of the supplementary material)
+
+<p align="center">
+  <img width="900" src="figs/more_results2.png">
 </p>
 </details>
 
 </details>
 
-## <a name="citation"></a>📎 Citatio
+## <a name="citation"></a>📎 Citation
 
 If you find the code helpful in your research or work, please cite the following paper(s).
 
