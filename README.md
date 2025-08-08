@@ -99,7 +99,7 @@ If you find the code helpful in your research or work, please cite the following
 @article{chen2025steering,
   title={Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression},
   author={Chen, Zheng and Zhou, Mingde and Guo, Jinpei and Yuan, Jiale and Ji, Yifei and Zhang, Yulun},
-  journal={arXiv preprint arXiv:},
+  journal={arXiv preprint arXiv:2508.04979},
   year={2025}
 }
 ```
