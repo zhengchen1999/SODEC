@@ -1,6 +1,6 @@
 # Project: SODEC
 
-https://zhengchen1999.github.io/SODEC
+https://zheng-chen.cn/SODEC/
 
 Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression
 
