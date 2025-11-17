@@ -1,6 +1,6 @@
 
 # Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression
-[Zheng Chen](https://zheng-chen.cn), [Mingde Zhou](https://orcid.org/0009-0003-6642-7349), [Jinpei Guo](https://jp-guo.github.io/), [Jiale Yuan](https://www.linkedin.com/in/jiale-yuan-0100a0223/), [Ji Yifei](https://github.com/Niax23), and [Yulun Zhang](http://yulunzhang.com/), "Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression", 2025
+[Zheng Chen](https://zheng-chen.cn), [Mingde Zhou](https://orcid.org/0009-0003-6642-7349), [Jinpei Guo](https://jp-guo.github.io/), [Jiale Yuan](https://www.linkedin.com/in/jiale-yuan-0100a0223/), [Ji Yifei](https://github.com/Niax23), and [Yulun Zhang](http://yulunzhang.com/), "Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression", AAAI, 2026
 
 <div>
 <a href="https://github.com/zhengchen1999/SODEC/releases" target='_blank' style="text-decoration: none;"><img src="https://img.shields.io/github/downloads/zhengchen1999/SODEC/total?color=green&style=flat"></a>
@@ -15,6 +15,7 @@
 
 #### 🔥🔥🔥 News
 
+- **2024-11-08:** SODEC is accepted at AAAI 2026. 🎉🎉🎉
 - **2025-8-07:** This repo is released.
 
 ---
@@ -113,11 +114,11 @@ We achieve impressive performance on image compression tasks.
 If you find the code helpful in your research or work, please cite the following paper(s).
 
 ```
-@article{chen2025steering,
+@inproceedings{chen2026steering,
   title={Steering One-Step Diffusion Model with Fidelity-Rich Decoder for Fast Image Compression},
   author={Chen, Zheng and Zhou, Mingde and Guo, Jinpei and Yuan, Jiale and Ji, Yifei and Zhang, Yulun},
-  journal={arXiv preprint arXiv:2508.04979},
-  year={2025}
+  booktitle={AAAI},
+  year={2026}
 }
 ```
 
